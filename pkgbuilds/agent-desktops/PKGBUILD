@@ -1,5 +1,5 @@
 pkgname=agent-desktops
-pkgver=0.2.1
+pkgver=0.3.0
 pkgrel=1
 pkgdesc='Watch and control agents working in background Hyprland desktops'
 arch=('x86_64' 'aarch64')
@@ -7,7 +7,7 @@ url='https://github.com/not-compromised/agent-desktops'
 license=('MIT' 'Apache-2.0' 'BSD-3-Clause' 'ISC' 'MPL-2.0' 'OFL-1.1')
 depends=(
   'bash' 'nodejs>=20' 'python>=3.11' 'python-gobject' 'gtk3' 'webkit2gtk-4.1'
-  'wayland' 'libxkbcommon' 'hyprland>=0.55' 'jq' 'grim' 'wtype' 'wlrctl' 'xorg-xwayland' 'wayvnc' 'systemd'
+  'wayland' 'libxkbcommon' 'hyprland>=0.55' 'jq' 'grim' 'at-spi2-core' 'xorg-xwayland' 'wayvnc' 'systemd'
 )
 makedepends=('npm' 'gcc' 'make' 'pkgconf')
 optdepends=(
@@ -15,7 +15,7 @@ optdepends=(
   't3code-nightly-bin: optional T3 V2 conversation support'
 )
 source=("${url}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.gz")
-sha256sums=('5c4e278f1fc8a202efbfce1046dc5b64f68b17092b5a9abf889e76ccb3cc41e6')
+sha256sums=('ab1d6eb10b4be75248fb0de22e1129151862d4e20fba6654c0501d627c6f6b73')
 options=('!strip' '!debug')
 
 build() {
