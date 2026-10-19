@@ -1,5 +1,5 @@
 pkgname=agent-desktops
-pkgver=0.2.0
+pkgver=0.2.1
 pkgrel=1
 pkgdesc='Watch and control agents working in background Hyprland desktops'
 arch=('x86_64' 'aarch64')
@@ -15,7 +15,7 @@ optdepends=(
   't3code-nightly-bin: optional T3 V2 conversation support'
 )
 source=("${url}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.gz")
-sha256sums=('dcf8fbae29667748d44a989bdf300b20ccf9784ee16da797edb304212c6b639d')
+sha256sums=('5c4e278f1fc8a202efbfce1046dc5b64f68b17092b5a9abf889e76ccb3cc41e6')
 options=('!strip' '!debug')
 
 build() {
